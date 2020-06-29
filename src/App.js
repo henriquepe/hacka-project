@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-//HAHAHAHA gostei disso chamaaaa fio
+// HAHAHAHA gostei disso chamaaaa fio
 
 function App() {
   return (
