@@ -1,31 +1,43 @@
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
 
-.login {
-  display: flex;
-  width: 100%;
-}
-
-#login-image{
-  position: relative;
-  top: -30px;
-  left: -40px;
-  width: 60%;
+.ships-img {
   height: 100vh;
-  background: transparent url('./assets/pexels-photo-167676.png') 0% 0% no-repeat padding-box;
-
+  background: url('./assets/ships.png');
+  background-position: center;
+  background-size: unset;
+  background-repeat: no-repeat;
+  box-shadow: 5px 3px 6px #00000090;
 }
 
-#ws-logo {
-  position: relative;
-  top: 220px;
-  right: -250px;
-  width: 232px;
-  height: 156px;
-  background: transparent url('./assets/ws.png') 0% 0% no-repeat padding-box;
+.logon {
+  text-align: center;
+  padding-top: 10%;
+}
 
+#gambiarra {
+  padding-bottom: 10px;
+}
+
+.form {
+  padding: 30px 10% 15% 10%;
+}
+
+.form #btn {
+  width: 95%;
+  height: 100%;
+  padding: 10px;
+  text-transform: none;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #00a7e0;
+}
+
+.textField {
+  width: 100%;
+}
+
+@media screen and (max-width: 765px){
+  .ships-img {
+    display: none;
+  }
 }
