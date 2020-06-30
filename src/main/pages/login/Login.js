@@ -4,15 +4,18 @@ import './Login.css';
 
 const Login = () => {
   return (
-    <div className="container">
-      <div className="login">
-        <div id="login-image" />
-        <div id="logon">
-          <div id="ws-logo" />
-          <div id="form-logon">
-            <input placeholder="example@example.com" />
-          </div>
-        </div>
+    <div id="home">
+      <div id="img" />
+      <div id="logon">
+        <div id="ws-logo" className="grid-template-columns-1" />
+        <input
+          placeholder="example@example.com"
+          className="email grid-template-columns-1"
+        />
+        <input
+          placeholder="password"
+          className="senha grid-template-columns-1"
+        />
       </div>
     </div>
   );
