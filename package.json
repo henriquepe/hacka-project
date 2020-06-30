@@ -18,8 +18,11 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4",
     "material-ui-pickers": "^2.2.4",
+    "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-image": "^4.0.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -44,7 +47,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.3.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5"

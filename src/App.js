@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import Login from './main/pages/login/Login';
 // HAHAHAHA gostei disso chamaaaa fio
 
 function App() {
   return (
     <div className="App">
-      <h1>Juzão, brabão</h1>
+      <Login />
     </div>
   );
 }
