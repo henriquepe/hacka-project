@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 import { TextField, Button } from '@material-ui/core';
 import logo from './assets/ws.png';
@@ -22,12 +23,14 @@ const Login = () => {
             <TextField
               className="textField"
               label="Senha"
-              type="text"
+              type="password"
               autoComplete="current-password"
             />
-            <Button id="btn" variant="contained">
-              Entrar
-            </Button>
+            <Link to="/dashboard">
+              <Button id="btn" variant="contained">
+                Entrar
+              </Button>
+            </Link>
           </form>
         </div>
       </div>
