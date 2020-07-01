@@ -1,0 +1,43 @@
+
+.ships-img {
+  height: 100vh;
+  background: url('./assets/ships.png');
+  background-position: center;
+  background-size: unset;
+  background-repeat: no-repeat;
+  box-shadow: 5px 3px 6px #00000090;
+}
+
+.logon {
+  text-align: center;
+  padding-top: 10%;
+}
+
+#gambiarra {
+  padding-bottom: 10px;
+}
+
+.form {
+  padding: 30px 10% 15% 10%;
+}
+
+.form #btn {
+  width: 95%;
+  height: 100%;
+  padding: 10px;
+  text-transform: none;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #00a7e0;
+}
+
+.textField {
+  width: 100%;
+}
+
+@media screen and (max-width: 765px){
+  .ships-img {
+    display: none;
+  }
+}
