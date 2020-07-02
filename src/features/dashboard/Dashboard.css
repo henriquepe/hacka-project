@@ -1,0 +1,8 @@
+.textHeaderOperator{
+    font-size: 20px;
+}
+
+.componentAlign{
+    display: flex;
+    justify-content: center;
+}

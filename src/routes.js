@@ -2,8 +2,8 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Login from './pages/Main/login/Login';
-import Dashboard from './pages/Main/dashboard/Dashboard';
+import Login from './features/login/Login';
+import Dashboard from './features/dashboard/Dashboard';
 
 const Routes = () => {
   return (
