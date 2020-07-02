@@ -28,25 +28,22 @@ const dashboard = () => {
                 </Toolbar>
               </Container>
           </AppBar>
-      </header>
+        </header>
     
-      <h1>Acesso do operador</h1> 
-      <div className="motors" >
-      <ul>
-        <li>
-          <img src={logoImg} className="itens"/>
-          <p>Motor 1 </p>      
-          <strong>57.9L </strong>
-          <p>De consumo de gasolina</p>
-            <ExpandMore />
-          <p className="arvores">10 árvores foram salvas hoje</p>
-        </li>
-        
-      </ul>
+        <h1>Acesso do operador</h1> 
+        <div className="motors" >
+          <ul>
+            <li>
+              <img src={logoImg} className="itens"/>
+              <p>Motor 1 </p>      
+              <strong>57.9L </strong>
+              <p>De consumo de gasolina</p>
+              <ExpandMore />
+              <p className="arvores">10 árvores foram salvas hoje</p>
+            </li>   
+          </ul>
+        </div>
       </div>
-</div>
-    )
-  
-};
+    )};
 
 export default dashboard;
