@@ -6,7 +6,8 @@
     "extends": [
         "plugin:react/recommended",
 				"airbnb",
-				"plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -20,6 +21,10 @@
         "prettier"
     ],
     "rules": {
+      "react/prop-types": "off",
+      "react/jsx-wrap-multilines": "off",
+      "jsx-quotes": "off",
+      "quotes": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "prettier/prettier": "error"
     }

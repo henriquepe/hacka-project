@@ -21,7 +21,7 @@
   padding: 30px 10% 15% 10%;
 }
 
-.form #btn {
+#btn {
   width: 95%;
   height: 100%;
   padding: 10px;
@@ -29,7 +29,13 @@
   margin-top: 20px;
   font-size: 14px;
   color: #fff;
-  background: #00a7e0;
+  text-decoration: none !important;
+  background: #00a7e0 !important;
+}
+
+#btn:hover {
+  opacity: 0.9;
+
 }
 
 .textField {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import Menu from '../../shared/components/menu/Menu';
@@ -7,6 +8,13 @@ import DateButton from './components/dateButton/dateButton';
 import MotorContainer from './components/motorContainer/motorContainer';
 
 import './Dashboard.css';
+
+const data = [
+  { name: 'Motor1', uv: 58.1, pv: 2400, amt: 2400 },
+  { name: 'Motor2', uv: 42.1, pv: 2400, amt: 2400 },
+  { name: 'Motor3', uv: 22.1, pv: 2400, amt: 2400 },
+  { name: 'Motor4', uv: 12.5, pv: 2400, amt: 2400 },
+];
 
 const dashboard = () => {
   return (
@@ -75,6 +83,24 @@ const dashboard = () => {
                   }
                   treeSaved="nós salvamos 0.5 árvores com esse mortor hoje!"
                 />
+              </div>
+            </div>
+          </div>
+
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <LineChart
+                  width={1200}
+                  height={300}
+                  data={data}
+                  margin={{ top: 20, right: 60, bottom: 5, left: -20 }}
+                >
+                  <Line type="natural" dataKey="uv" stroke="#8884d8" />
+                  <CartesianGrid stroke="#ccc" strokeDasharray="3 3 " />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                </LineChart>
               </div>
             </div>
           </div>
