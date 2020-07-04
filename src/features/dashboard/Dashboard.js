@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 import { Button } from '@material-ui/core';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import Menu from '../../shared/components/menu/Menu';
@@ -31,67 +31,75 @@ const dashboard = () => {
         <div className="container-fluid componentAlign">
           <div className="row ">
             <div className="motors col-sm-3 col-md-3 col-lg-3">
-              <Button>
-                <MotorContainer
-                  motorName="Motor 1"
-                  gas="58.1l"
-                  gasSaved="De consumo total de gasolina"
-                  iconUpDown={
-                    <ArrowDropUpIcon
-                      style={{ fontSize: '40px', color: 'green' }}
-                    />
-                  }
-                  treeSaved="nós salvamos 10 árvores com esse mortor hoje!"
-                />
-              </Button>
+              <Link to="/motor1">
+                <Button>
+                  <MotorContainer
+                    motorName="Motor 1"
+                    gas="58.1l"
+                    gasSaved="De consumo total de gasolina"
+                    iconUpDown={
+                      <ArrowDropUpIcon
+                        style={{ fontSize: '40px', color: 'green' }}
+                      />
+                    }
+                    treeSaved="nós salvamos 10 árvores com esse mortor hoje!"
+                  />
+                </Button>
+              </Link>
             </div>
 
             <div className="col-sm-3 col-md-3 col-lg-3">
-              <Button>
-                <MotorContainer
-                  motorName="Motor 2"
-                  gas="42.1l"
-                  gasSaved="De consumo total de gasolina"
-                  iconUpDown={
-                    <ArrowDropUpIcon
-                      style={{ fontSize: '40px', color: 'green' }}
-                    />
-                  }
-                  treeSaved="nós salvamos 8 árvores com esse mortor hoje!"
-                />
-              </Button>
+              <Link to="/motor2">
+                <Button>
+                  <MotorContainer
+                    motorName="Motor 2"
+                    gas="42.1l"
+                    gasSaved="De consumo total de gasolina"
+                    iconUpDown={
+                      <ArrowDropUpIcon
+                        style={{ fontSize: '40px', color: 'green' }}
+                      />
+                    }
+                    treeSaved="nós salvamos 8 árvores com esse mortor hoje!"
+                  />
+                </Button>
+              </Link>
             </div>
 
             <div className="col-sm-3 col-md-3 col-lg-3">
-              <Button>
-                <MotorContainer
-                  motorName="Motor 3"
-                  gas="22.1l"
-                  gasSaved="De consumo total de gasolina"
-                  iconUpDown={
-                    <ArrowDropUpIcon
-                      style={{ fontSize: '40px', color: 'green' }}
-                    />
-                  }
-                  treeSaved="nós salvamos 6 árvores com esse mortor hoje!"
-                />
-              </Button>
+              <Link to="/motor3">
+                <Button>
+                  <MotorContainer
+                    motorName="Motor 3"
+                    gas="22.1l"
+                    gasSaved="De consumo total de gasolina"
+                    iconUpDown={
+                      <ArrowDropUpIcon
+                        style={{ fontSize: '40px', color: 'green' }}
+                      />
+                    }
+                    treeSaved="nós salvamos 6 árvores com esse mortor hoje!"
+                  />
+                </Button>
+              </Link>
             </div>
 
             <div className="col-sm-3 col-md-3 col-lg-3">
-              <Button>
-                <MotorContainer
-                  motorName="Motor 4"
-                  gas="12.5l"
-                  gasSaved="De consumo total de gasolina"
-                  iconUpDown={
-                    <ArrowDropUpIcon
-                      style={{ fontSize: '40px', color: 'green' }}
-                    />
-                  }
-                  treeSaved="nós salvamos 0.5 árvores com esse mortor hoje!"
-                />
-              </Button>
+              <Link to="/motor4">
+                <Button>
+                  <MotorContainer
+                    motorName="Motor 4"
+                    gas="12.5l"
+                    gasSaved="De consumo total de gasolina"
+                    iconUpDown={
+                      <ArrowDropUpIcon
+                        style={{ fontSize: '40px', color: 'green' }}
+                      />
+                    }
+                    treeSaved="nós salvamos 0.5 árvores com esse mortor hoje!"
+                  />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
